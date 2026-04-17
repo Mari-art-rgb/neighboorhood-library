@@ -50,9 +50,11 @@ public class App {
             }
         }
 
-
+        System.out.println("What book would you like to check out? ");
 
         }
+
+
     public static void showAvailableBooks (Book[]books){
         for (int i = 0; i < books.length; i++) {
             if (books[i].isCheckedOut()) {
@@ -61,14 +63,16 @@ public class App {
         }
     }
 
-        public static void showCheckedOutBooks (Book[]books){
-            for (int i = 0; i < books.length; i++) {
-                if (books[i].isCheckedOut()) {
-                    System.out.println(books[i]);
-                }
+    public static void showCheckedOutBooks (Book[]books){
+        for (int i = 0; i < books.length; i++) {
+            if (books[i].isCheckedOut()) {
+                System.out.println(books[i]);
             }
-
         }
+
+    }
+
+
 }
 
 
